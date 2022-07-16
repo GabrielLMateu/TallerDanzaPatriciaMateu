@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=h1, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../imagenes/logo_208x208.png" type="image/x-icon" />
+  <!--Logo etiqueta de pestaña .ico o .png 16x16 pixeles recomendado puede ser igualmente .jpeg-->
+  <link rel="stylesheet" href="../Estilos/estilos.css" />
+  <title>Contacto</title>
+  <!------------------------------------Cuerpo Formulario------------------------------------>
+</head>
+
+<body class="fondoformulario">
+  <h1>Completa tus datos y te contactaremos a la brevedad</h1>
+  <form action="">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <!------------------------------------nombre------------------------------------>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
+      <br /><br />
+      <!--Solo por ahora hasta que veamos CSS-->
+      <!------------------------------------apellido------------------------------------>
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
+      <br /><br />
+      <!--Solo por ahora hasta que veamos CSS-->
+      <!------------------------------------mail-------------------------------------->
+      <label for="correo">Correo electronico</label>
+      <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required />
+      <br /><br />
+      <!--Solo por ahora hasta que veamos CSS-->
+      <!------------------------------------celular------------------------------------->
+      <label for="Num">Celular de contacto</label>
+      <input type="number" name="num" id="num" placeholder="Ingresa tu numero de celular" required />
+      <br /><br />
+      <!--Solo por ahora hasta que veamos CSS-->
+      <!------------------------------------seleccion de clases------------------------------------>
+      <div>Clases que te interesan:</div>
+      <br />
+      <input type="checkbox" name="cbox1" id="cbox1" />Danza clásica
+      <input type="checkbox" name="cbox1" id="cbox2" />Pre-Danza
+      <input type="checkbox" name="cbox1" id="cbox3" />Tap
+      <input type="checkbox" name="cbox1" id="cbox4" />Comedia Musical
+      <input type="checkbox" name="cbox1" id="cbox2" />Contempo Fusion
+      <input type="checkbox" name="cbox1" id="cbox3" />Urban Style
+      <input type="checkbox" name="cbox1" id="cbox4" />Teatro
+      <input type="checkbox" name="cbox1" id="cbox2" />Canto
+      <input type="checkbox" name="cbox1" id="cbox3" />Yoga
+      <input type="checkbox" name="cbox1" id="cbox4" />Zumba
+      <br /><br />
+      <!--Solo por ahora hasta que veamos CSS-->
+      <!------------------------------------comentarios------------------------------------>
+      <label for="comentario">Algo mas que quieras decirnos</label>
+      <br /><br />
+      <textarea name="" id="" cols="30" rows="10" minlength="5" maxlength="190"></textarea>
+      <br /><br />
+      <!--Solo por ahora hasta que veamos CSS-->
+      <!------------------------------------botones envio, limpieza, atras------------------------------------>
+      <input type="submit" value="Envia el formulario" />
+      <input type="reset" value="Limpia el formulario" />
+      <br /><br />
+      <a href="../Index.html" class="teolvidastealgo">Te olvidaste de algo? "Atras"</a>
+    </fieldset>
+  </form>
+</body>
+
+</html>
