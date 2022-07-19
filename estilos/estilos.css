@@ -18,7 +18,7 @@ html {
 
 .cuerpoformulario {
   color: rgb(232, 146, 243);
-  background-image: url(../imagenes/fondoformulario.jpeg);
+  /* background-image: url(../imagenes/fondoformulario.jpeg); */
   background-size: contain;
   font-style: italic;
   font-weight: 600;
@@ -26,9 +26,13 @@ html {
   display: grid;
 }
 
-.checkbox {
-  align-items: center;
-  display: grid
+.cuerpoformulario img{
+  width: 100%;
+}
+.opcionesformulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
 }
 
 .tituloformulario {
