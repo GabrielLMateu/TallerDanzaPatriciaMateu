@@ -1,46 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap');
+
+/* Normalize */
+
+:root {
+  /* Colors */
+  --primary: #8b4cbe;
+  --secondary: #eb82e2;
+  --alternative: #302F4d;
+  --text-color: #2b2b2b;
+  /* Spacing */
+  --Sapcing-large: 6rem;
+  --Sapcing-medium: 2.4rem;
+  --Sapcing-small: 2rem;
+  --Sapcing-xsmall: 1rem;
+  /* Font Family */
+  --font-principal: 'Barlow', sans-serif;
+  --font-title: 'Roboto-Slab', serif;
+  /* Font Sizes */
+  --text-large: 3.2rem;
+  --text-medium: 2.2rem;
+  --text-base: 1.6rem;
+  --text-small: 1.4rem;
+}
+
+*::after,
+*::before,
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body,
-html {
-  background-color: #020202;
+body{
+  font-family: var(--font-principal);
+  background-color: var(--primary);
 }
 
-.display-3 {
-  font-weight: 500;
-  background-color: azure;
+ul {
+  list-style-type: none;
 }
 
-/*------------------------------------Formulario index------------------------------------>*/
-
-.cuerpoformulario {
-  color: rgb(232, 146, 243);
-  /* background-image: url(../imagenes/fondoformulario.jpeg); */
-  background-size: contain;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 1.5rem;
-  display: grid;
+a {
+text-decoration: none;
+font-family: var(--font-title);
+color: var(--text-color);
 }
 
-.cuerpoformulario img{
+img {
   width: 100%;
 }
-.opcionesformulario {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-}
 
-.tituloformulario {
-  font-size: 2.8rem;
-  text-align: center;
-  margin-top: 1rem;
-  color: #ffffff;
-}
+/*------------------------------------Banner------------------------------------>*/
 
 .banner {
   background-image: url(../imagenes/baner\ 1.jpg);
@@ -52,9 +63,72 @@ html {
   width: 17%;
   height: 100%;
 }
+/*------------------------------------NAV------------------------------------>*/
+.navbar {
+font-size: var(--text-medium);
+}
 
+.navbar-brand{
+  font-size: var(--text-large);
+}
+
+.nav-link {
+  color: rgb(232, 146, 243);
+}
+
+.dropdown-menu{
+  font-size: var(--text-medium);
+}
+
+.nav-item{
+  border: 2px solid #F8F9FB;
+  transition: all 1seg;
+}
+
+.nav-item:hover {
+  border-color: var(--secondary);
+}
+/*------------------------------------Main------------------------------------>*/
+.conteiner{
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: var(--Sapcing-small);
+}
+/*------------------------------------Formulario index------------------------------------>*/
+
+.cuerpoformulario {
+  color: rgb(232, 146, 243);
+  background-size: contain;
+  font-weight: 600;
+  font-size: var(--text-medium);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--Sapcing-xsmall);
+  border: 4px solid var(--alternative);
+  padding: 1rem;
+
+}
+
+.opcionesformulario {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: var(--Sapcing-xsmall);
+}
+
+.tituloformulario {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+/*------------------------------------Formulario index------------------------------------>*/
+
+.carrusel{
+  margin-bottom: var(--Sapcing-medium);
+}
 .textoimagenes {
-  font-size: 3rem;
+  font-size: var(--text-large);
   text-align: left;
   color: #020202;
 }

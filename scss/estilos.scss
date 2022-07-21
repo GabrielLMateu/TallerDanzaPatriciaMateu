@@ -1,26 +1,60 @@
 @import "variables";
 
+:root {
+  /* Colors */
+  --primary: #120d31;
+  --secondary: #ff5376;
+  --alternative: #302F4d;
+  --text-color: #2b2b2b;
+  /* Spacing */
+  --Sapcing-large: 6rem;
+  --Sapcing-medium: 2.4rem;
+  --Sapcing-small: 2rem;
+  --Sapcing-xsmall: 1rem;
+  /* Font Family */
+  --font-principal: 'Barlow', sans-serif;
+  --font-title: 'Roboto-Slab', serif;
+  /* Font Sizes */
+  --text-large: 5.2rem;
+  --text-medium: 2.2rem;
+  --text-base: 1.6rem;
+  --text-small: 1.4rem;
+}
+
+*::after,
+*::before,
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body,
-html {
-  background-color: #020202;
+html{
+font-size: 62.5%;
 }
 
-.display-3 {
-  font-weight: 500;
-  background-color: azure;
+
+body{
+  font-family: var(--font-principal);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+text-decoration: none;
+font-family: var(--font-title);
+color: var(--text-color);
+}
+img {
+  width: 100%;
 }
 
 /*------------------------------------Formulario index------------------------------------>*/
 
 .cuerpoformulario {
   color: rgb(232, 146, 243);
-  /* background-image: url(../imagenes/fondoformulario.jpeg); */
   background-size: contain;
   font-style: italic;
   font-weight: 600;
@@ -28,13 +62,14 @@ html {
   display: grid;
 }
 
-.cuerpoformulario img{
+.cuerpoformulario img {
   width: 100%;
 }
+
 .opcionesformulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1rem;
+  gap: var(--Sapcing-medium);
 }
 
 .tituloformulario {
