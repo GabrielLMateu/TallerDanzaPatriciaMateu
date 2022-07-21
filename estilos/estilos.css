@@ -17,7 +17,7 @@
   --font-principal: 'Barlow', sans-serif;
   --font-title: 'Roboto-Slab', serif;
   /* Font Sizes */
-  --text-large: 3.2rem;
+  --text-large: 4.2rem;
   --text-medium: 2.2rem;
   --text-base: 1.6rem;
   --text-small: 1.4rem;
@@ -69,20 +69,22 @@ font-size: var(--text-medium);
 }
 
 .navbar-brand{
-  font-size: var(--text-large);
+  font-size: var(--text-medium);
+  margin-right: var(--Sapcing-large);
 }
 
 .nav-link {
   color: rgb(232, 146, 243);
+  margin-right: var(--Sapcing-xsmall);
 }
 
 .dropdown-menu{
-  font-size: var(--text-medium);
+  font-size: var(--text-base);
 }
 
 .nav-item{
   border: 2px solid #F8F9FB;
-  transition: all 1seg;
+  transition: all 0.3seg;
 }
 
 .nav-item:hover {
@@ -98,8 +100,7 @@ font-size: var(--text-medium);
 
 .cuerpoformulario {
   color: rgb(232, 146, 243);
-  background-size: contain;
-  font-weight: 600;
+  font-weight: 900;
   font-size: var(--text-medium);
   display: flex;
   flex-direction: column;
@@ -117,7 +118,7 @@ font-size: var(--text-medium);
 }
 
 .tituloformulario {
-  font-size: 2.8rem;
+  font-size: var(--text-large);
   text-align: center;
   margin-top: 1rem;
   color: #ffffff;
@@ -128,59 +129,60 @@ font-size: var(--text-medium);
   margin-bottom: var(--Sapcing-medium);
 }
 .textoimagenes {
-  font-size: var(--text-large);
+  font-size: var(--text-medium);
+  font-weight: 600;
   text-align: left;
   color: #020202;
 }
 
 .textoimagenesbco {
-  font-size: 4.5rem;
-  color: #ffffff;
-}
-
-main section h2 {
-  font-size: 6rem;
+  font-size: var(--text-large);
+  color: #2cff01;
 }
 
 .titulocarrusel {
-  font-size: 5rem;
-  font-style: oblique;
+  font-size: 8rem;
+  font-style: var(--font-title);
   color: #f1afe9;
+  font-weight: 900;
 }
 
 
 /*------------------------------------Footer------------------------------------>*/
 .contenedorfooter {
   background-color: black;
-  padding-bottom: 4rem;
+  padding: 2rem;
 }
 
 .footer {
-  width: 80%;
-  height: 40vh;
+  width: 90%;
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto;
-  font-size: larger;
+  margin:0 auto;
+  font-size: var(--text-medium);
+  align-items: center;
 }
 
 .columnafooter {
   display: flex;
   flex-direction: column;
-  margin-right: 4rem;
+  flex-wrap: wrap;
 }
 
 .columnafooter h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-size: var(--text-medium);
 }
 
 .columnafooter a {
   color: white;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  font-size: var(--text-base);
 }
 
 .columnafooter a:hover {
@@ -204,7 +206,8 @@ main section h2 {
 }
 
 .galeriastaff {
-  margin-left: 30%;
+  margin-top: 2%;
+  margin-left: 35%;
   width: 60vh;
   height: 60vh;
 }
