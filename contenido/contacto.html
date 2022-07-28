@@ -1,70 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=h1, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../imagenes/logo_208x208.png" type="image/x-icon" />
-  <!--Logo etiqueta de pestaña .ico o .png 16x16 pixeles recomendado puede ser igualmente .jpeg-->
-  <link rel="stylesheet" href="../Estilos/estilos.css" />
-  <title>Contacto</title>
-  <!------------------------------------Cuerpo Formulario------------------------------------>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/logo_pestaña.jpg" type="image/x-icon">
+    <!--Logo etiqueta de pestaña .ico o .png 16x16 pixeles recomendado puede ser igualmente .jpeg-->
+    <!--------- CSS Boostrap ONLY------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!------------CSS propio----------->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap" rel="stylesheet">
+    <title>Contacto</title>
 </head>
 
-<body class="fondoformulario">
-  <h1>Completa tus datos y te contactaremos a la brevedad</h1>
-  <form action="">
-    <fieldset>
-      <legend>Datos personales</legend>
-      <!------------------------------------nombre------------------------------------>
-      <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
-      <br /><br />
-      <!--Solo por ahora hasta que veamos CSS-->
-      <!------------------------------------apellido------------------------------------>
-      <label for="apellido">Apellido</label>
-      <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
-      <br /><br />
-      <!--Solo por ahora hasta que veamos CSS-->
-      <!------------------------------------mail-------------------------------------->
-      <label for="correo">Correo electronico</label>
-      <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required />
-      <br /><br />
-      <!--Solo por ahora hasta que veamos CSS-->
-      <!------------------------------------celular------------------------------------->
-      <label for="Num">Celular de contacto</label>
-      <input type="number" name="num" id="num" placeholder="Ingresa tu numero de celular" required />
-      <br /><br />
-      <!--Solo por ahora hasta que veamos CSS-->
-      <!------------------------------------seleccion de clases------------------------------------>
-      <div>Clases que te interesan:</div>
-      <br />
-      <input type="checkbox" name="cbox1" id="cbox1" />Danza clásica
-      <input type="checkbox" name="cbox1" id="cbox2" />Pre-Danza
-      <input type="checkbox" name="cbox1" id="cbox3" />Tap
-      <input type="checkbox" name="cbox1" id="cbox4" />Comedia Musical
-      <input type="checkbox" name="cbox1" id="cbox2" />Contempo Fusion
-      <input type="checkbox" name="cbox1" id="cbox3" />Urban Style
-      <input type="checkbox" name="cbox1" id="cbox4" />Teatro
-      <input type="checkbox" name="cbox1" id="cbox2" />Canto
-      <input type="checkbox" name="cbox1" id="cbox3" />Yoga
-      <input type="checkbox" name="cbox1" id="cbox4" />Zumba
-      <br /><br />
-      <!--Solo por ahora hasta que veamos CSS-->
-      <!------------------------------------comentarios------------------------------------>
-      <label for="comentario">Algo mas que quieras decirnos</label>
-      <br /><br />
-      <textarea name="" id="" cols="30" rows="10" minlength="5" maxlength="190"></textarea>
-      <br /><br />
-      <!--Solo por ahora hasta que veamos CSS-->
-      <!------------------------------------botones envio, limpieza, atras------------------------------------>
-      <input type="submit" value="Envia el formulario" />
-      <input type="reset" value="Limpia el formulario" />
-      <br /><br />
-      <a href="../Index.html" class="teolvidastealgo">Te olvidaste de algo? "Atras"</a>
-    </fieldset>
-  </form>
+<body class="padre_contacto">
+<!----------------------------------------------------------HEADER----------------------------------------------------------------------------->
+<header class="container-fluid">
+  <div class="row">
+      <div class="col-sm-12 my-4 banner">
+          <a href="../index.html">
+              <img src="../imagenes/logo_208x208.png" alt="Logo Estudio Patricia Nagy" />
+          </a>
+      </div>
+      <!----------------------------------------------------------NAV------------------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Estudio de Danza Patrica Nagy</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Nosotros.html">Sobre
+                              Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cursos.html">Cursos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Conocenos
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li>
+                                  <a class="dropdown-item" href="galeriainicial.html">Galeria fotos
+                                      nivel inicial</a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item" href="galeriaintermedio.html">Galeria fotos
+                                      nivel intermedio</a>
+                              </li>
+                              <li>
+                                  <hr class="dropdown-divider" />
+                              </li>
+                              <li><a class="dropdown-item" href="festivales.html">Festivales</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="tienda.html">Tienda</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                      <button class="btn btn-outline-success" type="submit">
+                          Search
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <!--------------Contactos----------->
+    <h2 class="titulo__contacto">Inscribite y aprende a bailar con <span>amigas</span></h2>
+
+    <div class="formulario__contacto__conjunto">
+        <div class="formulario__contacto">
+            <legend>Datos personales</legend>
+            <form action="" >
+                <p>
+                    <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre"
+                placeholder="Igresa tu Nombre" required>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido"
+                placeholder="Igresa tu Apellido" required>
+                </p>
+                <p>
+                    <label for="correo">E-Mail:</label><input type="email" name="correo" id="corre"
+                placeholder="Ingresa tu Correo" required>
+                </p>
+                <p>
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo">
+                    <option value="">Seleccionar</option>
+                    <option value="h">Hombre</option>
+                    <option value="m">Mujer</option>
+                    <option value="nb">No Binario</option>
+                    </select>
+                </p>
+                <p class="bloque_check">Deseas recibir el Newsletter<input type="checkbox" name="acepta" value="1">
+                </p>
+                <p class="bloque_texto">
+                <textarea name="comentarios" id="comentarios" cols="35" rows="10" placeholder="Comentario"></textarea>
+                </p>
+                <input class="enviar" type="submit" value="Enviar formulario">
+                <input class="limpiar" type="reset" value="Limpiar formulario">
+            </form>
+        </div>    
+    </div>
+    <!--------------------------------------Footer-------------------------------------->
+    <footer class="contenedorfooter">
+      <!--------------------------------------Social Media-------------------------------------->
+      <div class="footer">
+          <div class="columnafooter">
+              <h2>Redes Sociales</h2>
+              <a href="https://www.instagram.com/estudiopatricianagy/?hl=es-la">Instagram</a>
+              <a href="http://www.facebook.com/estudiopatricianagy">Facebook</a>
+          </div>
+          <!--------------------------------------Medios de contacto-------------------------------------->
+          <div class="columnafooter">
+              <h2>Contacto</h2>
+              <a href="">WhatsApp: +54 11 4418-4317</a>
+              <a href="">Email: danzaspatricianagy@hotmail.com</a>
+          </div>
+          <!--------------------------------------Formulario e Index-------------------------------------->
+          <div class="columnafooter">
+              <h2>Anotate</h2>
+              <a href="contacto.html">Formulario inscripcion</a>
+          </div>
+          <div class="columnafooter">
+              <h2>Conoce mas</h2>
+              <a href="../index.html">Ir arriba</a>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
