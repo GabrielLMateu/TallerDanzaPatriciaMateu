@@ -58,10 +58,10 @@ img {
 .navbar {
   font-size: var(--text-medium); }
 
-.navbar-brand {
+/* .navbar-brand{
   font-size: var(--text-medium);
-  margin-right: var(--Sapcing-large); }
-
+  margin-right: var(--Sapcing-large);
+} */
 .nav-link {
   color: #e892f3;
   margin-right: var(--Sapcing-xsmall); }
@@ -100,7 +100,7 @@ img {
   gap: var(--Sapcing-xsmall); }
 
 .tituloformulario {
-  font-size: var(--text-large);
+  font-size: 100%;
   text-align: center;
   margin-top: 1rem;
   color: #ffffff; }
@@ -120,7 +120,7 @@ img {
   color: #2cff01; }
 
 .titulocarrusel {
-  font-size: 8rem;
+  font-size: 100%;
   font-style: var(--font-title);
   color: #f1afe9;
   font-weight: 900; }
@@ -175,12 +175,6 @@ img {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /*------------------------------------carrusel staff------------------------------------>*/
-.galeriastaff {
-  margin-top: 2%;
-  margin-left: 35%;
-  width: 60vh;
-  height: 60vh; }
-
 /*------------------------------------Contacto------------------------------------>*/
 .padre_contacto {
   background-color: bisque; }
@@ -241,3 +235,10 @@ textarea {
   background-color: coral;
   color: #cc0c0c;
   transition: background-color .5s ease-in; }
+
+@media (min-width: 768px) {
+  .galeriastaff {
+    margin-top: 2%;
+    margin-left: 35%;
+    width: 60vh;
+    height: 60vh; } }

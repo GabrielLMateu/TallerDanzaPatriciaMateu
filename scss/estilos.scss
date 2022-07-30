@@ -70,10 +70,10 @@ img {
 font-size: var(--text-medium);
 }
 
-.navbar-brand{
+/* .navbar-brand{
   font-size: var(--text-medium);
   margin-right: var(--Sapcing-large);
-}
+} */
 
 .nav-link {
   color: rgb(232, 146, 243);
@@ -120,7 +120,7 @@ font-size: var(--text-medium);
 }
 
 .tituloformulario {
-  font-size: var(--text-large);
+  font-size: 100%;
   text-align: center;
   margin-top: 1rem;
   color: #ffffff;
@@ -143,7 +143,7 @@ font-size: var(--text-medium);
 }
 
 .titulocarrusel {
-  font-size: 8rem;
+  font-size: 100%;
   font-style: var(--font-title);
   color: #f1afe9;
   font-weight: 900;
@@ -205,12 +205,7 @@ font-size: var(--text-medium);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*------------------------------------carrusel staff------------------------------------>*/
-.galeriastaff {
-  margin-top: 2%;
-  margin-left: 35%;
-  width: 60vh;
-  height: 60vh;
-}
+
 /*------------------------------------Contacto------------------------------------>*/
 .padre_contacto {
   background-color: bisque; }
@@ -267,3 +262,11 @@ textarea {
   background-color: coral;
   color: rgb(204, 12, 12);
   transition: background-color .5s ease-in;}
+
+  @media (min-width: 768px) {
+.galeriastaff {
+  margin-top: 2%;
+  margin-left: 35%;
+  width: 60vh;
+  height: 60vh;} 
+  }
