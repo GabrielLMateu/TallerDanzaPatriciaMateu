@@ -1,0 +1,18 @@
+/*------------------------------------carrusel staff------------------------------------>*/
+@media (min-width: 768px) {
+    .galeriastaff {
+      margin-top: 2%;
+      margin-left: 35%;
+      width: 60vh;
+      height: 60vh;} 
+      }
+/*------------------------------------carrusel index------------------------------------>*/
+
+@media (max-width: 768px) {
+        h1 {
+          font-size: var(--text-base);
+          font-style: var(--font-title);
+          color: #f1afe9;
+          font-weight: 900;
+        }
+      }

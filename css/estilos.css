@@ -1,6 +1,27 @@
 @charset "UTF-8";
+/*LAS VARIABLES NOS VAN A PERMITIR ESTANDARIZAR LOS COLORES Y TAMAÑOS*/
+:root {
+  /* Colors */
+  --primary: #8b4cbe;
+  --secondary: #eb82e2;
+  --alternative: #302F4d;
+  --text-color: #2b2b2b;
+  /* Spacing */
+  --Sapcing-large: 6rem;
+  --Sapcing-medium: 2.4rem;
+  --Sapcing-small: 2rem;
+  --Sapcing-xsmall: 1rem;
+  /* Font Family */
+  --font-principal: 'Barlow', sans-serif;
+  --font-title: 'Roboto-Slab', serif;
+  /* Font Sizes */
+  --text-large: 4.2rem;
+  --text-medium: 2.2rem;
+  --text-base: 1.6rem;
+  --text-small: 1.4rem; }
+
+/* Siempre primero */
 /*------------------------------------Contacto------------------------------------>*/
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap");
 .padre_contacto {
   background-color: bisque; }
 
@@ -61,28 +82,44 @@ textarea {
   color: #cc0c0c;
   transition: background-color .5s ease-in; }
 
-/*LAS VARIABLES NOS VAN A PERMITIR ESTANDARIZAR LOS COLORES Y TAMAÑOS*/
-:root {
-  /* Colors */
-  --primary: #8b4cbe;
-  --secondary: #eb82e2;
-  --alternative: #302F4d;
-  --text-color: #2b2b2b;
-  /* Spacing */
-  --Sapcing-large: 6rem;
-  --Sapcing-medium: 2.4rem;
-  --Sapcing-small: 2rem;
-  --Sapcing-xsmall: 1rem;
-  /* Font Family */
-  --font-principal: 'Barlow', sans-serif;
-  --font-title: 'Roboto-Slab', serif;
-  /* Font Sizes */
-  --text-large: 4.2rem;
-  --text-medium: 2.2rem;
-  --text-base: 1.6rem;
-  --text-small: 1.4rem; }
+/*------------------------------------Formulario contacto------------------------------------>*/
+.fondoformulario {
+  background-color: #482a69;
+  color: beige; }
 
-/* Normalize */
+.teolvidastealgo {
+  text-decoration: 0;
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/*------------------------------------carrusel staff------------------------------------>*/
+@media (min-width: 768px) {
+  .galeriastaff {
+    margin-top: 2%;
+    margin-left: 35%;
+    width: 60vh;
+    height: 60vh; } }
+
+/*------------------------------------carrusel staff------------------------------------>*/
+@media (min-width: 768px) {
+  .galeriastaff {
+    margin-top: 2%;
+    margin-left: 35%;
+    width: 60vh;
+    height: 60vh; } }
+
+/*------------------------------------carrusel index------------------------------------>*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--text-base);
+    font-style: var(--font-title);
+    color: #f1afe9;
+    font-weight: 900; } }
+
+/* Siempre ultimo */
 *::after,
 *::before,
 * {
@@ -180,8 +217,8 @@ img {
   font-size: var(--text-large);
   color: #2cff01; }
 
-.titulocarrusel {
-  font-size: 100%;
+h1 {
+  font-size: var(--text-large);
   font-style: var(--font-title);
   color: #f1afe9;
   font-weight: 900; }
@@ -221,26 +258,3 @@ img {
 .columnafooter a:hover {
   color: #e7b9b9;
   transition: 0.3 ease-out; }
-
-/*------------------------------------Formulario contacto------------------------------------>*/
-.fondoformulario {
-  background-color: #482a69;
-  color: beige; }
-
-.teolvidastealgo {
-  text-decoration: 0;
-  background-color: black;
-  color: white;
-  padding: 0.2rem;
-  font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-/*------------------------------------carrusel staff------------------------------------>*/
-@media (min-width: 768px) {
-  .galeriastaff {
-    margin-top: 2%;
-    margin-left: 35%;
-    width: 60vh;
-    height: 60vh; } }
-
-/* adsadasdasdasd */

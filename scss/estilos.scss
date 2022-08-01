@@ -1,8 +1,8 @@
-@import "_contactos.scss";
-@import "_variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap');
-
-/* Normalize */
+@import "utilities/variables"; /* Siempre primero */
+@import "views/contactos";
+@import "views/nosotros";
+@import "components/botones";
+@import "utilities/mediaqueries";/* Siempre ultimo */
 
 *::after,
 *::before,
@@ -121,8 +121,8 @@ font-size: var(--text-medium);
   color: #2cff01;
 }
 
-.titulocarrusel {
-  font-size: 100%;
+h1 {
+  font-size: var(--text-large);
   font-style: var(--font-title);
   color: #f1afe9;
   font-weight: 900;
@@ -169,29 +169,6 @@ font-size: var(--text-medium);
   transition: 0.3 ease-out;
 }
 
-/*------------------------------------Formulario contacto------------------------------------>*/
-.fondoformulario {
-  background-color: rgb(72, 42, 105);
-  color: beige;
-}
-
-.teolvidastealgo {
-  text-decoration: 0;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 0.2rem;
-  font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/*------------------------------------carrusel staff------------------------------------>*/
 
 
-  @media (min-width: 768px) {
-.galeriastaff {
-  margin-top: 2%;
-  margin-left: 35%;
-  width: 60vh;
-  height: 60vh;} 
-  }
 
-  /* adsadasdasdasd */
