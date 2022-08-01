@@ -1,7 +1,67 @@
 @charset "UTF-8";
-/*LAS VARIABLES NOS VAN A PERMITIR ESTANDARIZAR LOS COLORES Y TAMAÑOS*/
+/*------------------------------------Contacto------------------------------------>*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap");
-/* Normalize */
+.padre_contacto {
+  background-color: bisque; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.titulo__contacto {
+  text-align: center;
+  font-size: 2.5em;
+  color: #531b1b; }
+
+.titulo__contacto span {
+  color: #660166; }
+
+.formulario__contacto__conjunto {
+  box-shadow: 0 0 20px 0 rgba(22, 22, 22, 0.9);
+  background: #574a64; }
+
+.formulario__contacto__conjunto > * {
+  padding: 1em;
+  font-family: 'Montagu Slab', serif;
+  line-height: 1.6; }
+
+.formulario__contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.formulario__contacto form p {
+  margin: 1;
+  padding: 1em; }
+
+.formulario__contacto form p label {
+  display: block; }
+
+.formulario__contacto form .bloque_check,
+.bloque_texto {
+  grid-column: 1 / 3; }
+
+.formulario__contacto form .bloque_check {
+  display: flex;
+  align-items: center; }
+
+.formulario__contacto form select,
+input,
+textarea {
+  width: 100%;
+  padding: .5em;
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid coral; }
+
+.formulario__contacto form .enviar:hover, .formulario__contacto form .enviar:focus,
+.limpiar:hover,
+.limpiar:focus {
+  background-color: coral;
+  color: #cc0c0c;
+  transition: background-color .5s ease-in; }
+
+/*LAS VARIABLES NOS VAN A PERMITIR ESTANDARIZAR LOS COLORES Y TAMAÑOS*/
 :root {
   /* Colors */
   --primary: #8b4cbe;
@@ -22,6 +82,7 @@
   --text-base: 1.6rem;
   --text-small: 1.4rem; }
 
+/* Normalize */
 *::after,
 *::before,
 * {
@@ -170,75 +231,16 @@ img {
   text-decoration: 0;
   background-color: black;
   color: white;
-  padding: 0.1rem;
+  padding: 0.2rem;
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /*------------------------------------carrusel staff------------------------------------>*/
-/*------------------------------------Contacto------------------------------------>*/
-.padre_contacto {
-  background-color: bisque; }
-
-ul {
-  list-style: none;
-  padding: 0; }
-
-.titulo__contacto {
-  text-align: center;
-  font-size: 2.5em;
-  color: #531b1b; }
-
-.titulo__contacto span {
-  color: #660166; }
-
-.formulario__contacto__conjunto {
-  box-shadow: 0 0 20px 0 rgba(22, 22, 22, 0.9);
-  background: #574a64; }
-
-.formulario__contacto__conjunto > * {
-  padding: 1em;
-  font-family: 'Montagu Slab', serif;
-  line-height: 1.6; }
-
-.formulario__contacto form {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
-
-.formulario__contacto form p {
-  margin: 1;
-  padding: 1em; }
-
-.formulario__contacto form p label {
-  display: block; }
-
-.formulario__contacto form .bloque_check,
-.bloque_texto {
-  grid-column: 1 / 3; }
-
-.formulario__contacto form .bloque_check {
-  display: flex;
-  align-items: center; }
-
-.formulario__contacto form select,
-input,
-textarea {
-  width: 100%;
-  padding: .5em;
-  border: none;
-  background: none;
-  outline: none;
-  border: 1px solid coral; }
-
-.formulario__contacto form .enviar:hover, .formulario__contacto form .enviar:focus,
-.limpiar:hover,
-.limpiar:focus {
-  background-color: coral;
-  color: #cc0c0c;
-  transition: background-color .5s ease-in; }
-
 @media (min-width: 768px) {
   .galeriastaff {
     margin-top: 2%;
     margin-left: 35%;
     width: 60vh;
     height: 60vh; } }
+
+/* adsadasdasdasd */

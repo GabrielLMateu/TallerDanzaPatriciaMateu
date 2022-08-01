@@ -1,1 +1,21 @@
 /*LAS VARIABLES NOS VAN A PERMITIR ESTANDARIZAR LOS COLORES Y TAMAÑOS*/
+:root {
+    /* Colors */
+    --primary: #8b4cbe;
+    --secondary: #eb82e2;
+    --alternative: #302F4d;
+    --text-color: #2b2b2b;
+    /* Spacing */
+    --Sapcing-large: 6rem;
+    --Sapcing-medium: 2.4rem;
+    --Sapcing-small: 2rem;
+    --Sapcing-xsmall: 1rem;
+    /* Font Family */
+    --font-principal: 'Barlow', sans-serif;
+    --font-title: 'Roboto-Slab', serif;
+    /* Font Sizes */
+    --text-large: 4.2rem;
+    --text-medium: 2.2rem;
+    --text-base: 1.6rem;
+    --text-small: 1.4rem;
+  }
