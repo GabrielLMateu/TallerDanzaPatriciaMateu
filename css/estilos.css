@@ -162,6 +162,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.w-100 {
+  width: 60vh;
+  height: 60vh; }
+
 /*------------------------------------carrusel staff------------------------------------>*/
 @media (min-width: 768px) {
   .galeriastaff {
